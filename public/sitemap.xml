@@ -8,6 +8,14 @@
   </url>
   
   <url>
+    <loc>https://jeromie.github.io/public/_header/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jeromie.github.io/public/page/</loc>
+  </url>
+  
+  <url>
     <loc>https://jeromie.github.io/public/categories/</loc>
     <priority>0</priority>
   </url>
@@ -15,7 +23,6 @@
   <url>
     <loc>https://jeromie.github.io/public/</loc>
     <lastmod>2017-08-28T11:27:08+05:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

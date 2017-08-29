@@ -1,3 +1,6 @@
 body{
-	background: orange;
+	background: white;
+}
+#sidebar, #header-wrapper{
+	background-color: #404040;
 }
