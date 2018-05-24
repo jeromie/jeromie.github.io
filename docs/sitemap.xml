@@ -3,36 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jeromie.github.io/public/post/my-first-post/</loc>
+    <loc>https://jeromie.github.io/post/my-first-post/</loc>
     <lastmod>2017-08-28T11:27:08+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/_header/</loc>
+    <loc>https://jeromie.github.io/_header/</loc>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/page/</loc>
+    <loc>https://jeromie.github.io/page/</loc>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/categories/</loc>
+    <loc>https://jeromie.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/</loc>
+    <loc>https://jeromie.github.io/</loc>
     <lastmod>2017-08-28T11:27:08+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/post/</loc>
+    <loc>https://jeromie.github.io/post/</loc>
     <lastmod>2017-08-28T11:27:08+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jeromie.github.io/public/tags/</loc>
+    <loc>https://jeromie.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
