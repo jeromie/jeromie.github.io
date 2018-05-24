@@ -1,0 +1,34 @@
+<!-- Component style -->
+<div class="multi_column__horizontal row">
+
+	<!-- Section Title if any -->
+    <h2 class="section-title-embellishment-star" style="color: #333333">Multi-column Horizontal layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
+
+    {{ partial "block_horizontal.html" . }}
+
+    <style type="text/css">
+      .multi_column__horizontal--single{
+        display: flex;
+        margin-bottom: 15px;
+      }
+      .multi_column__horizontal--single .image-holder{
+        flex-basis: 30%;
+      }
+      .multi_column__horizontal--single.w-mask .image-holder{
+        flex-basis: 70px;
+      }
+      .multi_column__horizontal--single .image-holder .circle_mask{
+        border-radius: 50%;
+      }
+      .multi_column__horizontal--single .content-holder{
+        flex: 1;
+        padding: 0 12px 0;
+      }
+      .multi_column__horizontal--single .h3{
+        margin-top: 0;
+      }
+      .multi_column__horizontal--single .h3.margin-top{
+        margin-top: 12px;
+      }
+    </style>
+</div>

@@ -1,0 +1,78 @@
+<!-- Component style -->
+<div class="multi_column__overlay row">
+
+	<!-- Section Title if any -->
+	<h2 class="section-title-embellishment-star" style="color: #333333">Multi-column overlay layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
+
+	{{ partial "block_overlay.html" . }}
+
+	<style type="text/css">
+		.multi_column__overlay--single{
+			margin-bottom: 15px;
+		}
+		.multi_column__overlay--single .overlay-wrapper{
+			position: relative;
+			overflow: hidden;
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip{
+			perspective: 2000px;
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip .overlay-content{
+			top: 0;
+			transform: translateY(0);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transition: all .5s cubic-bezier(.645,.045,.355,1);
+			transform-style: preserve-3d;
+		}
+		.multi_column__overlay--single .overlay-content{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 0 12px;
+			transform: translateY(75px);
+			transition: all 0.3s ease;
+			transform-style: preserve-3d;
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip .bg-cover-container{
+			transition: all .5s cubic-bezier(.645,.045,.355,1);
+			transform-style: preserve-3d;
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip:hover .bg-cover-container{
+			transform: rotateY(-180deg);
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip:hover .overlay-content{
+			transform: rotateY(0);
+			opacity: 1;
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip .bg-cover-container{
+			transform: rotateY(0);
+		}
+		.multi_column__overlay--single .overlay-wrapper.w-flip .overlay-content{
+			transform: rotateY(180deg);
+			opacity: 0;
+		}
+		.multi_column__overlay--single .overlay-content.not-full-w{
+			left: 12px;
+			right: 12px;
+		}
+		.multi_column__overlay--single .overlay-wrapper:hover .overlay-content{
+			transform: translateY(0);
+		}
+		.multi_column__overlay--single .overlay-content p{
+			color: #333333;
+			margin-bottom: 15px;
+		}
+		.multi_column__overlay--single .overlay-content .h3{
+			margin-top: 15px;
+			margin-bottom: 10px;
+		}
+		.multi_column__overlay--single a:hover{
+		  text-decoration: none;
+		}
+	</style>
+</div>
