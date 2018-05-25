@@ -1,7 +1,7 @@
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "docs"
-baseURL = "https://jeromie.github.io/"
+baseURL = "https://jeromie.github.io/docs/"
 languageCode = "en-us"
 title = "My Test Site"
 sectionPagesMenu = "main"
