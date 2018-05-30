@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>All my Pages on My Test Site</title>
-    <link>https://jeromie.github.io/page/</link>
+    <link>https://jeromie.github.io/docs/page/</link>
     <description>Recent content in All my Pages on My Test Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jeromie.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeromie.github.io/docs/page/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
