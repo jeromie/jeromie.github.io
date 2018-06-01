@@ -7,32 +7,36 @@
     {{ partial "block_horizontal.html" . }}
 
     <style type="text/css">
-      .multi_column__horizontal--single{
+      .multi_column__horizontal--single {
+        display: -moz-box;
         display: flex;
         margin-bottom: 15px;
       }
-      .multi_column__horizontal--single.tall-image{
+      .multi_column__horizontal--single.tall-image {
         min-height: 200px;
       }
-      .multi_column__horizontal--single .image-holder{
-        flex-basis: 30%;
-      }
-      .multi_column__horizontal--single.w-mask .image-holder{
+      .multi_column__horizontal--single.w-mask .image-holder {
         flex-basis: 70px;
       }
-      .multi_column__horizontal--single .image-holder .circle_mask{
-        border-radius: 50%;
+      .multi_column__horizontal--single .image-holder {
+        flex-basis: 30%;
       }
-      .multi_column__horizontal--single .content-holder{
-        flex: 1;
+      .multi_column__horizontal--single .image-holder .circle_mask {
+        -moz-border-radius: 50%;
+             border-radius: 50%;
+      }
+      .multi_column__horizontal--single .content-holder {
+        -moz-box-flex: 1;
+             flex: 1;
         padding: 0 12px 0;
       }
-      .multi_column__horizontal--single .h3{
+      .multi_column__horizontal--single .h3 {
         margin-top: 0;
         margin-bottom: 10px;
       }
-      .multi_column__horizontal--single .h3.margin-top{
+      .multi_column__horizontal--single .h3.margin-top {
         margin-top: 12px;
       }
+
     </style>
 </div>

@@ -1,0 +1,27 @@
+.multi_column__horizontal--single{
+  display: flex;
+  margin-bottom: 15px;
+  &.tall-image{
+    min-height: 200px;
+  }
+  &.w-mask .image-holder{
+    flex-basis: 70px;
+  }
+  .image-holder{
+    flex-basis: 30%;
+    .circle_mask{
+      border-radius: 50%;
+    }
+  }
+  .content-holder{
+    flex: 1;
+    padding: 0 12px 0;
+  }
+  .h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    &.margin-top{
+      margin-top: 12px;
+    }
+  }
+}
