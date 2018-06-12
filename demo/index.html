@@ -1329,16 +1329,9 @@
 		.multi_column__overlay--single .overlay-wrapper:hover .overlay-content.overlay-content {
 		   
 		  bottom: 0;
-		  display: -webkit-box;
-		  display: -ms-flexbox;
-		  display: flex;
 		  -webkit-box-align: center;
 		      -ms-flex-align: center;
 		          align-items: center;
-		  -webkit-box-orient: vertical;
-		  -webkit-box-direction: normal;
-		      -ms-flex-direction: column;
-		          flex-direction: column;
 		  -webkit-box-pack: center;
 		      -ms-flex-pack: center;
 		          justify-content: center;
@@ -1356,6 +1349,13 @@
 		  -webkit-transform-style: preserve-3d;
 		          transform-style: preserve-3d;
 		  height: 100%;
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-orient: vertical;
+		  -webkit-box-direction: normal;
+		      -ms-flex-direction: column;
+		          flex-direction: column;
 		}
 		.multi_column__overlay--single .overlay-wrapper .overlay-content .h3 {
 		  margin-top: 15px;
@@ -1364,7 +1364,6 @@
 		.multi_column__overlay--single .overlay-wrapper .overlay-content p {
 		  color: #333333;
 		  margin-bottom: 15px;
-		   
 		  width: 100%;
 		}
 		.multi_column__overlay--single .overlay-wrapper .overlay-content.not-full-w {
@@ -1383,16 +1382,9 @@
 		  }
 		  .multi_column__overlay--single .overlay-wrapper .overlay-content.overlay-content {
 		    bottom: 0;
-		    display: -webkit-box;
-		    display: -ms-flexbox;
-		    display: flex;
 		    -webkit-box-align: center;
 		        -ms-flex-align: center;
 		            align-items: center;
-		    -webkit-box-orient: vertical;
-		    -webkit-box-direction: normal;
-		        -ms-flex-direction: column;
-		            flex-direction: column;
 		    -webkit-box-pack: center;
 		        -ms-flex-pack: center;
 		            justify-content: center;
@@ -1401,15 +1393,6 @@
 		    font-weight: 600;
 		  }
 		}
-
-		 
-		@media screen and (min-width: 768px){
-			::-webkit-full-page-media, _:future, :root .overlay-wrapper:not(.w-flip):hover .overlay-content.overlay-content {
-			display: block;
-			}
-		}
-
-
 		.multi_column__overlay--single .overlay-wrapper.w-flip {
 		  -webkit-perspective: 2000px;
 		          perspective: 2000px;
@@ -1469,6 +1452,7 @@
 		.multi_column__overlay--single a:hover {
 		  text-decoration: none;
 		}
+
 
 	</style>
 </div>
