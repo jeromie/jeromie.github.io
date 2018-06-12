@@ -3,6 +3,16 @@
   margin-bottom: 15px;
   &.tall-image{
     min-height: 200px;
+    // Safari height100% issue fix
+    .image-holder{
+      position: relative;
+      & > div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
   }
   &.w-mask .image-holder{
     flex-basis: 70px;
