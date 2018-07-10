@@ -1,5 +1,5 @@
 <!-- Component style -->
-<div class="multi_column__horizontal row">
+<div class="n_column__horizontal row">
 
 	<!-- Section Title if any -->
     <h2 class="section-title-embellishment-star" style="color: #333333">Multi-column Horizontal layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
@@ -8,38 +8,41 @@
 
     <style type="text/css">
 
-      .multi_column__horizontal--single {
-        display: -webkit-box;
-        display: -ms-flexbox;
+      .n_column__horizontal--style{
         display: flex;
         margin-bottom: 15px;
       }
-      .multi_column__horizontal--single.tall-image {
-        min-height: 200px;
+      .n_column__horizontal--style .image-holder{
+        flex-basis: 30%;
       }
-      .multi_column__horizontal--single.w-mask .image-holder {
-        -ms-flex-preferred-size: 70px;
-            flex-basis: 70px;
+      .n_column__horizontal--style.w-mask .image-holder{
+        flex-basis: 70px;
       }
-      .multi_column__horizontal--single .image-holder {
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
-      }
-      .multi_column__horizontal--single .image-holder .circle_mask {
+      .n_column__horizontal--style .image-holder .circle-mask{
         border-radius: 50%;
       }
-      .multi_column__horizontal--single .content-holder {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
+      .n_column__horizontal--style .content-holder{
+        flex: 1;
         padding: 0 12px 0;
       }
-      .multi_column__horizontal--single .h3 {
+      .n_column__horizontal--style .h3{
         margin-top: 0;
         margin-bottom: 10px;
       }
-      .multi_column__horizontal--single .h3.margin-top {
+      .n_column__horizontal--style .h3.margin-top{
         margin-top: 12px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px){
+          .n_column__horizontal{
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          }
+          .n_column__horizontal .col-sm-3{
+              width: 50%;
+          }
       }
 
     </style>

@@ -1,5 +1,5 @@
 <!-- Component style -->
-<div class="multi_column__basic row">
+<div class="n_column__basic row">
 
 	<!-- Section Title if any -->
   <h2 class="section-title-embellishment-star" style="color: #333333">Multi-column Basic layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
@@ -7,10 +7,37 @@
   {{ partial "block_basic.html" . }}
 
 	<style type="text/css">
+		.n_column__basic--style .separator{
+		        padding-top: 10px;
+		        padding-bottom: 10px;
+		        position: relative;
+		}
+		.n_column__basic--style .separator:before{
+		      content: " ";
+		      width: 100%;
+		      left: 0;
+		      right: 0;
+		      margin: 0 auto;
+		      border-bottom: 1px solid rgba(0,0,0,0.2);
+		      position: absolute;
+		}
+		@media screen and (min-width: 768px) and (max-width: 991px){
+		    .n_column__basic{
+		        display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: flex;
+		        -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		    }
+		    .n_column__basic .col-sm-3{
+		        width: 50%;
+		    }
+		}
 		@media screen and (max-width: 767px){
-			.multi_column__basic .h3{
-				margin-top: 15px;
-			}
+		  .n_column__basic--style .h3 {
+		    margin-top: 15px;
+		    margin-bottom: 10px;
+		  }
 		}
 	</style>
 

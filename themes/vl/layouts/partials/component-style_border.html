@@ -1,46 +1,91 @@
 <!-- Component style -->
-<div class="multi_column__border row">
+	<h2 class="section-title-embellishment-star" style="color: #333333">Multi-column Border layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
+<div class="n_column__borders row">
 
 	<!-- Section Title if any -->
-	<h2 class="section-title-embellishment-star" style="color: #333333">Multi-column Border layout <span class="decor-line"><em class="star" style="background-color: #333333"><i></i></em></span></h2>
 
 	{{ partial "block_border.html" . }}
 
 	<style type="text/css">
-	  .multi_column__border--single {
-	    margin-bottom: 15px;
-	  }
-	  .multi_column__border--single a:hover {
-	    text-decoration: none;
-	  }
-	  .multi_column__border--single.w-border {
-	    border: 1px solid rgba(0, 0, 0, 0.2);
-	  }
-	  .multi_column__border--single.w-shadow {
-	    border: 1px solid rgba(0, 0, 0, 0);
-	    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-	         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-	  }
-	  .multi_column__border--single .padding-horz {
-	    padding: 0 12px;
-	  }
-	  .multi_column__border--single--bg {
-	    background-color: rgba(182, 71, 53, 0.15);
-	  }
-	  .multi_column__border--single p {
-	    color: #333333;
-	  }
-	  .multi_column__border--single .bg-cover-container.circle_mask {
-	    -moz-border-radius: 50%;
-	         border-radius: 50%;
-	    width: 200px;
-	    margin: 20px auto 0;
-	  }
-	  @media screen and (max-width: 767px){
-		.multi_column__border .h3{
-			margin-top: 15px;
-			}
-		}
+	  .n_column__borders{
+	          display: -webkit-box;
+	          display: -ms-flexbox;
+	          display: flex;
+	          -ms-flex-wrap: wrap;
+	          flex-wrap: wrap;
+	      }
+	      .n_column__borders .col-sm-4{
+	          display: -webkit-box;
+	          display: -ms-flexbox;
+	          display: flex;
+	      -webkit-box-orient: vertical;
+	      -webkit-box-direction: normal;
+	          -ms-flex-direction: column;
+	              flex-direction: column;
+	      }
+	      .n_column__borders--style{
+	          margin-bottom: 15px;
+	          height: 100%;
+	          -webkit-box-flex: 1;
+	          -ms-flex: 1;
+	             flex: 1;
+	      }
+	      .n_column__borders--style a:hover,.n_column__borders--style a:focus{
+	          text-decoration: none;
+	      }
+	      .n_column__borders--style.with-border{
+	          border: 1px solid rgba(0,0,0,0.2);
+	      }
+	      .n_column__borders--style.with-shadow{
+	          border: 1px solid rgba(0,0,0,0);
+	          box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+	      }
+	      .n_column__borders--style .padding-horz{
+	          padding: 0 12px;
+	      }
+	      .n_column__borders--style--bg{
+	          background-color: rgba(182, 71, 53, 0.15);
+	      }
+	      .n_column__borders--style .bg-cover-container.circle-mask{
+	          border-radius: 50%;
+	          width: 200px;
+	          margin: 20px auto 0;
+	      }
+	      .n_column__borders--style .bg-cover-container.circle-mask.with-shadow{
+	          border-radius: 50%;
+	          width: 200px;
+	          margin: 20px auto 0;
+	          /* border: 5px solid rgba(0,0,0,0); */
+	          box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+	      }
+	      .n_column__borders--style .separator{
+	          padding-top: 10px;
+	          padding-bottom: 10px;
+	          position: relative;
+	      }
+	      .n_column__borders--style .separator:before{
+	          content: " ";
+	          width: 100%;
+	          left: 0;
+	          right: 0;
+	          margin: 0 auto;
+	          border-bottom: 1px solid rgba(0,0,0,0.2);
+	          position: absolute;
+	      }
+	      @media screen and (min-width: 768px) and (max-width: 991px){
+	          .n_column__borders .col-sm-3{
+	              width: 50%;
+	          }
+	          .n_column__borders--style{
+	              margin-bottom: 30px;
+	          }
+	      }
+	      @media screen and (max-width: 767px){
+	          .n_column__borders--style .h3 {
+	            margin-top: 15px;
+	            margin-bottom: 10px;
+	          }
+	      }
 	</style>
 
 </div>
